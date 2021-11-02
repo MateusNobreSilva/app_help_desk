@@ -42,6 +42,7 @@ foreach ($usuarios_app as $user) {
 if ($usuario_autenticado) {
     echo 'Usuário autenticado';
     $_SESSION['autenticado'] = 'SIM';
+    header('Location: home.php');
 } else {
     $_SESSION['autenticado'] = 'NAO';
     //  echo 'Erro na autenticação do usuário';

@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -47,6 +46,14 @@
 
                 <div class="text-danger">
                   Usuário ou senha inválidos
+                </div>
+
+              <?php } ?>
+
+              <?php if (isset($_GET['login']) && $_GET['login'] == 'erro2') { ?>
+
+                <div class="text-danger">
+                  Faça login antes de acessar as páginas 
                 </div>
 
               <?php } ?>
